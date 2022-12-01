@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PHO PHO-NATIC</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  
+  <!--This is an internal css for my background images-->
+<style> 
+body {
+  background-image: url('images/pho.webp'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+</style> 
+</head>
+ <!--I converted the background image file from png to webp. webp optimizes compression and makes my website load more quickly -->
+  
+<body>
+    <!--This section is for my navigation bar-->
+        <nav>
+          <div class="nav-bar">
+            <a href="index.html">PHO PHO-NATIC</a>
+            <img class="pho-logo" src="images/pho-logo.webp" alt="pho logo">
+          </div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+  <!--Added alt attribute to <img> which gives an alternative text for the area, if my image cannot be displayed.-->
+  
+     <!--This section is my homepage content-->
+   <section class="overlay">
+      <div class="content">
+    <h1>TASTE THE FLAVORS OF VIETNAM!</h1>
+        <br>
+      <p>Authentic Vietnamese cuisine leans more on the light, fresh flavors of herbs and vegetables</p>
+        <br>
+      <button onclick="window.location.href='menu.html';" aria-label="menu">ORDER NOW</button>
+        <!--for <button> I replaced href with onclick attribute and added aria-label which provides a text alternative to an element that has no visible text on the screen (also improves accessibility) -->
+      </div>  
+   </section>
+<!-- changed <div> to semantic HTML <section> for better readability -->
+  
+  <!--This is my footer that contains my website's social media links-->
+<footer>
+    <a class="yt-logo" href="https://www.youtube.com/c/DelightfulPlate" aria-label="Youtube" target="_blank"><img src="images/youtube-logo.webp" alt="youtube logo" ></a>
+    <a class="fb-logo" href="https://www.facebook.com/delightfulplate/" aria-label="Facebook" target="_blank"><img src="images/facebook-logo.webp" alt="facebook logo"></a>
+    <a class="insta-logo" href="https://www.instagram.com/delightfulplate/?hl=en" aria-label="Instagram" target="_blank"><img src="images/instagram-logo.webp" alt="instagram logo"></a>
+    <a class="pint-logo" href="https://www.pinterest.com/delightfulplate/"
+      aria-label="Pinterest" target="_blank"><img src="images/pinterest-logo.webp" alt="pinterest logo"></a>
+</footer>
+</body> 
+</html>

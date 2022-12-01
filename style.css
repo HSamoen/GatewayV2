@@ -1,0 +1,243 @@
+ * {
+   margin: 0px;
+   padding:0px;
+   box-sizing: border-box;
+}
+
+main{
+  width: 100%;
+}
+
+/*Navigation bar*/
+nav{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+/*restaurant name*/
+.nav-bar a{
+  font-size:40px;
+  color: white;
+  font-weight: bold;
+  margin-left: 100px;
+  text-shadow: 2px 2px gray;
+}
+/*restaurant logo*/
+.pho-logo {
+  width: 70px;
+  height: 60px;
+  position:absolute; 
+  padding-left:10px;
+}
+/*home-menu-contact links*/
+a{
+  text-decoration: none;
+  color: white;  
+  font-size: 19px; 
+}
+ul{
+  margin: 0px;
+  margin-right: 100px;
+}
+ul li{
+  float: left;
+  padding: 0px 10px;
+  list-style: none;
+}
+ul li a:hover{
+  color:red;
+}
+
+
+/*HOMEPAGE//HERO IMAGE*/
+
+/*homepage content*/
+.content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align:center;
+}
+.content h1{
+  font-size: 50px;  
+}
+.content p{
+  padding: 0px 50px;
+  font-size: 20px;
+}
+/*order now button*/
+button{
+  background:none;
+  border: solid white 1px;
+  color: white;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 6px;
+  transition: 1s all ease;
+}
+button:hover{
+  background:gray;
+  color:white;
+}
+.overlay{
+  background:rgba(0,0,0,0.5);
+  height:100vh;
+}
+
+
+/*menu page*/
+.menu{
+  padding: 30px 10px 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*makes my menu items in columns of 3*/
+  grid-gap: 20px;
+  transition: 2s all ease; 
+}
+/*menu heading*/
+.menu-heading{
+  color: white;
+  margin-bottom: 30px;
+  padding: 50px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+.menu-heading h1{
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 30px;
+  margin-bottom: 10px;
+  transition: 1.5s all ease;
+}
+/*food items*/
+.food-items {
+  background-color: white;
+  display: grid;
+  position: relative; 
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.food-items img{
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+/*food details*/
+.details{
+  padding: 20px 10px;
+  display: grid;
+}
+/*name of food and price*/
+.food-details{
+  display: grid;
+}
+.food-details h2{
+  font-weight: 600;
+  font-size: 20px;
+  text-align:center;
+}
+
+/*food description*/
+.details p{
+  color: black;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  align-self: stretch;
+  text-align:center;
+}
+/*add to order button*/
+.details button{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 150px;
+  margin: auto;
+}
+.order:hover{
+  background:red;
+  color:white;
+}
+
+
+/*CONTACT PAGE*/
+
+/*contact heading*/
+.contact-heading{
+  margin-top:100px;
+  color: white;
+  text-transform: uppercase;
+  text-align:center;
+  margin-bottom:50px;
+}
+.contact-heading h1{
+  font-size: 30px;
+  line-height: 10px;
+  text-align: center;
+  transition: 2.5s all ease;
+}
+/*contact form*/
+#contact-form{
+  margin:0;
+  padding:0;
+  text-align:center;
+  background-position: center;
+  font-family:sans-serif; 
+}
+form{
+  margin-top:40px;
+  text-align:center;
+}
+.form-control{
+  width:500px;
+  background:white;
+  border:solid white 2px;
+  border-radius:4px;
+  color:black;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+/*submit button*/
+.submit{
+  color:white;
+  border-color: gray;
+  background:black;
+}
+.submit:hover{
+  background:gray;
+  color:white;
+}
+
+/*FOOTER*/
+
+/*social media links*/
+  footer {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: center;
+    bottom:0;
+    padding-top:10px;
+    width: 100%;
+    opacity:0.85;
+  }  
+
+ .yt-logo img{
+   padding-right: 2px;
+   height: 55px;
+ }
+.fb-logo img{
+  height: 48px;
+}
+.insta-logo img{
+  height: 60px;
+}
+.pint-logo img{
+  height: 50px;
+}

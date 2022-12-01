@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PHO PHO-NATIC</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <!--This is an internal css for my background images-->
+<style>
+body {
+  background-image: url('/images/contact-img.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover; 
+}
+</style> 
+</head>
+ 
+<body>
+<!--This section is for my navigation bar-->
+        <nav>
+          <div class="nav-bar">
+            <a href="index.html">PHO PHO-NATIC</a>
+            <img class="pho-logo" src="images/pho-logo.webp" alt="pho logo">
+          </div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+  
+   <!--This is my contact page heading-->
+<header class="contact-heading">
+     <h1>CONTACT US</h1>
+</header>  
+  <!-- changed <div> to semantic tag <header> -->
+  
+   <!--This is my contact page form input-->
+   
+     <form id="contact-form">
+        <input name="Firstname" type="text" class="form-control" placeholder="First name" required>
+          <br>
+        <input name="Lastname" type="text" class="form-control" placeholder="Last name" required>
+          <br>
+        <input name="Email" type="text" class="form-control" placeholder="E-mail address" required>
+          <br>
+        <input name="Phonenumber" type="text" class="form-control" maxlength="10" placeholder="Phone number" required>
+          <br>
+        <textarea name="Message" class="form-control" placeholder="Leave a message" rows="5" required>  
+        </textarea>
+          <br>
+        <button type="submit" class="submit" aria-label="submit">SUBMIT</button>
+     </form>  
+   
+
+  <!--This is my footer that contains my website's social media links-->
+<footer>
+    <a class="yt-logo" href="https://www.youtube.com/c/DelightfulPlate" aria-label="Youtube" target="_blank"><img src="images/youtube-logo.webp" alt="youtube logo" ></a>
+    <a class="fb-logo" href="https://www.facebook.com/delightfulplate/" aria-label="Facebook" target="_blank"><img src="images/facebook-logo.webp" alt="facebook logo"></a>
+    <a class="insta-logo" href="https://www.instagram.com/delightfulplate/?hl=en" aria-label="Instagram" target="_blank"><img src="images/instagram-logo.webp" alt="instagram logo"></a>
+    <a class="pint-logo" href="https://www.pinterest.com/delightfulplate/"
+      aria-label="Pinterest" target="_blank"><img src="images/pinterest-logo.webp" alt="pinterest logo"></a>
+</footer>
+</body> 
+</html>
